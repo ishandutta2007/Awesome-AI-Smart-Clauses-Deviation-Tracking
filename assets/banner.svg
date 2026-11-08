@@ -1,0 +1,160 @@
+<svg width="100%" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="accentCyanPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Filter for glow -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.8" stroke-opacity="0.35" />
+    </pattern>
+
+    <style>
+      .orb-float-1 {
+        animation: orbMove1 12s ease-in-out infinite alternate;
+      }
+      .orb-float-2 {
+        animation: orbMove2 10s ease-in-out infinite alternate;
+      }
+      .pulse-flow {
+        stroke-dasharray: 8 12;
+        animation: flowDash 20s linear infinite;
+      }
+      .pill-float {
+        animation: gentleFloat 5s ease-in-out infinite alternate;
+      }
+      .pill-float-rev {
+        animation: gentleFloatRev 6s ease-in-out infinite alternate;
+      }
+      @keyframes orbMove1 {
+        0% { transform: translate(0px, 0px) scale(1); }
+        100% { transform: translate(60px, 25px) scale(1.15); }
+      }
+      @keyframes orbMove2 {
+        0% { transform: translate(0px, 0px) scale(1); }
+        100% { transform: translate(-50px, -20px) scale(0.9); }
+      }
+      @keyframes flowDash {
+        to { stroke-dashoffset: -400; }
+      }
+      @keyframes gentleFloat {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-7px); }
+      }
+      @keyframes gentleFloatRev {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(6px); }
+      }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="260" rx="16" fill="url(#bgGradient)" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Animated Glowing Orbs in the background -->
+  <g class="orb-float-1">
+    <circle cx="180" cy="70" r="130" fill="#38bdf8" opacity="0.12" filter="url(#softGlow)" />
+  </g>
+  <g class="orb-float-2">
+    <circle cx="1040" cy="190" r="140" fill="#a855f7" opacity="0.14" filter="url(#softGlow)" />
+    <circle cx="880" cy="50" r="90" fill="#06b6d4" opacity="0.1" filter="url(#softGlow)" />
+  </g>
+
+  <!-- Technical Circuit Grid Background Overlay -->
+  <rect width="1200" height="260" rx="16" fill="url(#gridPattern)" />
+
+  <!-- Background Dynamic Flow Lines representing contract stream diffing -->
+  <path d="M -50 200 C 250 220, 450 150, 750 210 C 950 250, 1150 170, 1250 190" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.3" class="pulse-flow" />
+  <path d="M -50 70 C 300 30, 600 120, 900 40 C 1050 0, 1150 70, 1250 50" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.25" class="pulse-flow" />
+
+  <!-- Subtle Ambient Feature Badges/Pills in Background Wings -->
+  <g class="pill-float" opacity="0.85">
+    <rect x="50" y="32" width="170" height="30" rx="15" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="68" cy="47" r="4" fill="#38bdf8" />
+    <text x="80" y="52" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">PLAYBOOK VERIFICATION</text>
+  </g>
+
+  <g class="pill-float-rev" opacity="0.85">
+    <rect x="50" y="196" width="165" height="30" rx="15" fill="url(#cardGrad)" stroke="#a855f7" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="68" cy="211" r="4" fill="#a855f7" />
+    <text x="80" y="216" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">5-TIER CLAUSE RISK</text>
+  </g>
+
+  <g class="pill-float" opacity="0.85">
+    <rect x="980" y="32" width="170" height="30" rx="15" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="998" cy="47" r="4" fill="#10b981" />
+    <text x="1010" y="52" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">NLI SEMANTIC DIFF</text>
+  </g>
+
+  <g class="pill-float-rev" opacity="0.85">
+    <rect x="985" y="196" width="165" height="30" rx="15" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="1003" cy="211" r="4" fill="#f59e0b" />
+    <text x="1015" y="216" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">EVIDENCE CITATIONS</text>
+  </g>
+
+  <!-- Central Foreground Content - Title, Subtitle, Category Pills -->
+  <!-- Category Pill -->
+  <g>
+    <rect x="470" y="26" width="260" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6" />
+    <circle cx="488" cy="40" r="4" fill="#38bdf8" />
+    <text x="502" y="44" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" letter-spacing="1">CURATED LEGAL TECH &amp; CLM</text>
+  </g>
+
+  <!-- Main Hero Title -->
+  <text x="600" y="104" text-anchor="middle" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'SF Pro Display', Roboto, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">
+    AI Smart Clauses &amp; Deviation Tracking
+  </text>
+
+  <!-- Dynamic Gradient Accent Bar below Title -->
+  <rect x="420" y="118" width="360" height="3" rx="1.5" fill="url(#accentCyanPurple)" />
+
+  <!-- Subtitle Line 1 -->
+  <text x="600" y="152" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="500">
+    Automated Playbook Deviation Detection • Clause Tiering • Self-Hosted Contract Intelligence
+  </text>
+
+  <!-- Subtitle Line 2 -->
+  <text x="600" y="176" text-anchor="middle" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400">
+    Enterprise CLM Solutions, Word Redline Copilots &amp; Open-Source Legal NLP Frameworks
+  </text>
+
+  <!-- Lower Stat Badges in Foreground -->
+  <g transform="translate(345, 206)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="150" height="26" rx="13" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="75" y="17" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">⚡ Automated Redlining</text>
+
+    <!-- Pill 2 -->
+    <rect x="165" y="0" width="175" height="26" rx="13" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="252" y="17" text-anchor="middle" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">🛡️ Missing Clause Audits</text>
+
+    <!-- Pill 3 -->
+    <rect x="355" y="0" width="155" height="26" rx="13" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="432" y="17" text-anchor="middle" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">🔍 Evidence Citations</text>
+  </g>
+</svg>
