@@ -8,7 +8,7 @@
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome List" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-AI-Smart-Clauses-Deviation-Tracking/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Smart-Clauses-Deviation-Tracking?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-AI-Smart-Clauses-Deviation-Tracking/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Smart-Clauses-Deviation-Tracking?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
@@ -67,9 +67,9 @@ The following table summarizes the leading commercial and enterprise platforms p
 
 ## 💻 Open-Source GitHub Projects
 
-The following curated open-source projects provide building blocks, reference skills, benchmarks, and architectures for AI contract review, clause extraction, and deviation tracking. Sorted by GitHub stars (descending). 🌟
+The following curated open-source projects provide building blocks, reference skills, benchmarks, and architectures for AI contract review, clause extraction, and deviation tracking. Sorted by GitHub_Stars (descending). 🌟
 
-| Project & Repository 📦 | Star Count ⭐ | Architecture / Tech Stack 🛠️ | License 📄 | Description & Capability 💡 |
+| Project & Repository 📦 | Stars_Count ⭐ | Architecture / Tech Stack 🛠️ | License 📄 | Description & Capability 💡 |
 | :--- | :--- | :--- | :--- | :--- |
 | **[open-legal-products/mike](https://github.com/open-legal-products/mike)** | [![Stars](https://img.shields.io/github/stars/open-legal-products/mike?style=social&color=white)](https://github.com/open-legal-products/mike/stargazers) | TypeScript, Python, Full-Stack OSS Legal Platform | Apache-2.0 | Comprehensive open-source legal AI workspace and platform designed for contract analysis, document drafting, and custom legal intelligence pipelines. |
 | **[The-Atticus-Project/cuad](https://github.com/The-Atticus-Project/cuad)** | [![Stars](https://img.shields.io/github/stars/The-Atticus-Project/cuad?style=social&color=white)](https://github.com/The-Atticus-Project/cuad/stargazers) | Python, NLP Transformers, PyTorch | CC BY 4.0 | The gold-standard Contract Understanding Atticus Dataset (NeurIPS). Features 13,000+ annotations across 41 legal clause categories to benchmark and train clause extraction and risk models. |
@@ -127,7 +127,7 @@ Contributions are welcome! Please follow these guidelines: ✨
 2. 🌿 Create a feature branch (`git checkout -b feature/add-new-project`).
 3. 📝 Add your entry to the appropriate table following the existing format:
    - For SaaS tools: include verified starting pricing and specific free trial / tier limits.
-   - For Open-Source tools: include a GitHub social star badge linking to its `/stargazers` page.
+   - For Open-Source tools: include a GitHub social Stars_Badge linking to its `/stargazers` page.
 4. 🚀 Commit your changes and submit a pull request with a concise summary.
 
 ---
